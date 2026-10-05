@@ -4,7 +4,7 @@ Description: Single EC2 instance (Amazon Linux 2023) with an auto-created key pa
 Parameters: # Inputs that can be changed at deploy time
   InstanceType: # Parameter for the EC2 size
     Type: String # Value is plain text
-    Default: t2.micro # Used when no value is passed (free-tier size)
+    Default: t2.small # Used when no value is passed (free-tier size)
     AllowedValues: [t2.micro, t2.small, t2.medium, t3.micro, t3.small, t3.medium] # Only these sizes are accepted (lab-friendly)
     Description: EC2 instance size. # Help text shown in the console
   SSHLocation: # Parameter for who can SSH in
